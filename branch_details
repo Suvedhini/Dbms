@@ -1,0 +1,4 @@
+create table branch_details (branch_name char(10), branch_city char(20),
+assets numeric(10));
+
+sp_help branch_details
