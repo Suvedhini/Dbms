@@ -1,0 +1,8 @@
+create table customer_details(cust_id varchar(10), cust_name varchar(100), cust_street varchar(100),cust_city varchar(100));
+
+sp_help customer_details;
+
+insert into customer_details values('A-123','Nancy','Main','Mumbai')
+insert into customer_details values('B-345', 'Preethi','Street','Chennai')
+
+select *from customer_details
