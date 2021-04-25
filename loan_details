@@ -1,0 +1,11 @@
+create table loan_details(loan_no varchar(10), branch_name char(10),
+amount numeric(5));
+
+insert into loan_details values('A-1','Bandra',2000)
+insert into loan_details values('B-2','Andheri',3000)
+insert into loan_details values('C-3','Perryridge',5000)
+select *from loan_details
+
+select branch_name from loan_details
+
+select loan_no, amount from loan_details;
