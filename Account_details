@@ -1,0 +1,8 @@
+create table account_details(account_no varchar(10),balance numeric(10));
+
+alter table account_details
+add branch char(100);
+
+insert into account_details values ( 'A-102',400,'Perryridge' );
+
+select *from account_details
