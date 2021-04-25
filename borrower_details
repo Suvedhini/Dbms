@@ -1,0 +1,4 @@
+create table borrower_details(customer_name char(10), loan_no varchar(10));
+
+
+sp_help borrower_details
