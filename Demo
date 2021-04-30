@@ -1,0 +1,3 @@
+Create database university;
+Create table students;
+Create view for_students;
