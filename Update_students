@@ -1,0 +1,3 @@
+UPDATE students    
+SET FirstName = 'Jhon', LastName= 'Wick' 
+WHERE StudID = 3;
