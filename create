@@ -1,0 +1,2 @@
+create table customer_details (cust_idvarchar(10), cust_name char (20),
+cust_streetvarchar(10), cust_city char(10));
