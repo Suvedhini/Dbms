@@ -1,0 +1,56 @@
+create table Employee(Id varchar(50),Name varchar(50),Age numeric,Address varchar(100),Salary numeric)
+
+insert into Employee values(1,'Aswin',25,'Kerala',50000)
+insert into Employee values(2,'Bala',26,'TamilNadu',50000)
+insert into Employee values(3,'Deepa',28,'Bangalore',45000)
+insert into Employee values(4,'Priya',23,'TamilNadu',48000)
+insert into Employee values(5,'Vikas',25,'Mumbai',45000)
+insert into Employee values(6,'Prem',31,'Mumbai',51000)
+insert into Employee values(7,'Diksha',36,'Delhi',55000)
+
+select *from Employee
+
+/* IN */
+
+select *from Employee where Id IN(Select Id from Employee where Salary>48000)
+
+/* NOT IN */
+
+select *from Employee where Id NOT IN(Select Id from Employee where Salary>48000)
+
+/* SET COMPARISON */
+
+/* = */
+
+select *from Employee where salary=50000
+
+/* Greater than operator(>) */
+
+
+select *from Employee where Salary>50000
+
+
+/* Less than operator(<) */
+
+select *from Employee where Salary < 50000
+
+
+/*Greater than or equal to ( >= ) operator*/
+
+select *from Employee where Salary >=50000
+
+
+/* Less than or equal to ( <= ) operator */
+
+select *from Employee where Salary <=50000
+
+
+/*Not equal to ( <> ) operator */
+
+select *from Employee where Address <> 'TamilNadu'
+
+
+
+
+
+
