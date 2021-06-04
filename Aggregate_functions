@@ -1,0 +1,27 @@
+create table Student(Id varchar(100),Name varchar(100),Salary numeric(10))
+
+insert into Student values(1,'Suvedhini',50000)
+insert into Student values(2,'Vincy',30000)
+insert into Student values(3,'Swetha',60000)
+insert into Student values(4,'Priya',20000)
+insert into Student values(5,'Surya',40000)
+insert into Student values(6,'Keerthi',20000)
+
+select *from Student
+
+select count(*) from Student where Salary>20000      /* count(*) */
+select count(Id) from Student                       /*count(column_name)*/
+select count(Distinct Salary) from Student         /* count(distinct column_name) */
+
+select SUM(Salary) from Student                   /* SUM(column_name) */
+select SUM(Distinct Salary) from Student          /*SUM(distinct column_name)*/
+
+select AVG(Id) from Student                      /* AVG(column_name) */
+select AVG(Distinct Salary) from Student         /* AVG(distinct column_name)*/
+
+select Min(Salary) from Student                 /* Min(column_name)*/
+select Max(Salary) from Student                 /* Max(column_name) */
+
+
+
+
