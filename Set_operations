@@ -1,0 +1,34 @@
+create table Employee1(Name varchar(50))
+
+insert into Employee1 values('Vivek')
+insert into Employee1 values('Sam')
+insert into Employee1 values('Srinivas')
+insert into Employee1 values('Manu')
+
+select *from Employee1
+
+create table Employee2(Name varchar(50))
+
+insert into Employee2 values('Manu')
+insert into Employee2 values('Ragul')
+insert into Employee2 values('Gautham')
+
+select *from Employee2
+
+/*UNION OPERATION*/
+
+select *from Employee1 UNION select *from Employee2
+
+/*UNION ALL OPERATION */
+
+select *from Employee1 UNION ALL select *from Employee2
+
+/* INTERSECTION OPERATION */
+
+select *from Employee1 Intersect select *from Employee2
+
+
+/* MINUS OPERATION */
+
+select *from Employee1 MINUS select *from Employee2
+
